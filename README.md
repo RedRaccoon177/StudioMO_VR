@@ -9,9 +9,9 @@
 - Screenshots: [이미지 경로]
 
 ## Project Info
-- 개발 기간: [YYYY.MM.DD - YYYY.MM.DD]
-- 개발 인원: [총 N명] (클라이언트: N, 기획: N, 아트: N 등)
-- 플랫폼: [PC VR / Quest / SteamVR 등]
+- 개발 기간: [2025.05.02 - 2025.07.04] (43일)
+- 개발 인원: [총 8명] (클라이언트: 4, 기획: 4)
+- 플랫폼: [PC VR / QuestVR 등]
 - 엔진/버전: Unity 2022.3.21f1
 - 네트워크: Photon PUN2
 - 백엔드: Firebase Authentication, Realtime Database
@@ -148,13 +148,3 @@ Users/
 - Firebase 권한 오류(Permission denied): Rules/인증 상태 확인
 - Photon 입장 실패: AppId/리전/네트워크 상태 확인
 - [프로젝트에서 실제로 자주 나온 이슈 추가]
-
-## Team & Credits
-- 기획: [이름]
-- 클라이언트: [이름]
-- 아트: [이름]
-- 사운드: [이름]
-- [외부 에셋/라이선스 표기]
-
-## License
-[라이선스 / 비공개 여부 / 포트폴리오용 사용 범위]
