@@ -1,6 +1,5 @@
 <!-- ===== HEADER ===== -->
 <h1 align="center">Unimo: Beyond</h1>
-
 <p align="center">
   우주선을 직접 조종해 광물을 채굴하며 적 탄막을 회피하는 VR 멀티플레이 닷지 액션
 </p>
@@ -15,12 +14,9 @@
   <a href="https://drive.google.com/file/d/1kRubaIICLOgiDBT0KfKmVI13rv3sLodv/view?usp=sharing">
     <img src="https://img.shields.io/badge/PPT-Download-blue" />
   </a>
-  <a href="YOUR_REPO_LINK">
-    <img src="https://img.shields.io/badge/Repo-GitHub-black?logo=github&logoColor=white" />
-  </a>
 </p>
 
-<br><br>
+<br>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/bd4ef0a8-c01a-4782-b3ec-e89326a6b7e9"
@@ -38,34 +34,11 @@
 - ⭐ Firebase(Auth/Realtime DB) + Photon PUN2 기반 **계정/데이터/매칭/룸 시스템** 구현
 - ⭐ Stage/Skin은 ScriptableObject 로컬 참조로 구성해 **서버 요청 최소화(VR 최적화)**
 
-<br><br>
+<br>
 
 ---
 
-<br><br>
-
-## 🎬 Links
-- 📺 포트폴리오 영상: https://youtu.be/hGNuNgRSJIE?si=uhEJ9xLJ0jFJO407
-- 📄 PPT: https://drive.google.com/file/d/1kRubaIICLOgiDBT0KfKmVI13rv3sLodv/view?usp=sharing
-- 🔗 Repository: YOUR_REPO_LINK
-
-<br><br>
-
-<!-- ===== END HEADER ===== -->
-
----
-
-# Unimo: Beyond (VR Multiplayer)
-
-Unity 기반 VR 멀티플레이 프로젝트입니다.  
-Firebase(Authentication / Realtime Database)로 **계정·유저데이터·세션 제어**를 구성했고,  
-Photon PUN2로 **매칭/룸 시스템**을 구현했습니다.
-
-<br><br>
-
----
-
-<br><br>
+<br>
 
 ## 📋 목차
 - [게임 소개](#game-intro)
@@ -78,22 +51,22 @@ Photon PUN2로 **매칭/룸 시스템**을 구현했습니다.
   - [스테이지 인게임 (CSV/BPM 탄막 패턴)](#stage)
 - [기술 스택](#tech-stack)
 
-<br><br>
+<br>
 
 ---
 
-<br><br>
+<br>
 
 <a name="game-intro"></a>
 ## 🎯 게임 소개
 Unimo: Beyond는 **우주선을 조종해 광물을 채굴하며 적 탄막을 회피**하는 VR 멀티플레이 닷지 액션 게임입니다.  
 본 README는 “게임 설명”보다 **제가 직접 개발한 시스템(코드) 중심**으로 정리한 포트폴리오 문서입니다.
 
-<br><br>
+<br>
 
 ---
 
-<br><br>
+<br>
 
 <a name="project-info"></a>
 ## 🧾 프로젝트 정보
@@ -104,11 +77,11 @@ Unimo: Beyond는 **우주선을 조종해 광물을 채굴하며 적 탄막을 �
 - 네트워크: Photon PUN2
 - 백엔드: Firebase Authentication, Realtime Database
 
-<br><br>
+<br>
 
 ---
 
-<br><br>
+<br>
 
 <a name="my-role"></a>
 ## 👤 내 역할 (개발 팀 리더 / 클라이언트)
@@ -119,16 +92,15 @@ Unimo: Beyond는 **우주선을 조종해 광물을 채굴하며 적 탄막을 �
 - Stage/Skin **ScriptableObject 로컬 참조 최적화 구조**
 - CSV/BPM 기반 **스테이지 탄막 스케줄 시스템**
 
-<br><br>
+<br>
 
 ---
 
-<br><br>
+<br>
 
 <a name="what-i-built"></a>
 ## ✅ 내가 구현한 핵심
 
-<br>
 
 <a name="firebase"></a>
 ### 1) Firebase (Auth / Realtime DB)
@@ -180,11 +152,11 @@ Unimo: Beyond는 **우주선을 조종해 광물을 채굴하며 적 탄막을 �
   - 유도 탄막: 스폰 시점 플레이어 위치를 샘플링해 해당 방향으로 발사
   - 프리셋 패턴 탄막: 각도/범위 프리셋으로 패턴화된 탄막 연출
 
-<br><br>
+<br>
 
 ---
 
-<br><br>
+<br>
 
 <a name="tech-stack"></a>
 ## 🧩 기술 스택
@@ -194,3 +166,5 @@ Unimo: Beyond는 **우주선을 조종해 광물을 채굴하며 적 탄막을 �
 - XR Interaction Toolkit
 - URP
 - C#
+
+<br>
