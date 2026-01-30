@@ -1,8 +1,46 @@
-# Unimo: Beyond (VR Multiplayer)
+<!-- ===== HEADER ===== -->
 
-Unity 기반 VR 멀티플레이 프로젝트입니다.  
-Firebase(Authentication / Realtime Database)로 **계정·유저데이터·세션 제어**를 구성했고,  
-Photon PUN2로 **매칭/룸 시스템**을 구현했습니다.
+<p align="center">
+  <!-- 로고(원하면 교체) -->
+  <img src="assets/readme/youtube_logo.png" alt="logo" width="90" />
+</p>
+
+<h1 align="center">Unimo: Beyond</h1>
+
+<p align="center">
+  우주선을 직접 조종해 광물을 채굴하며 적 탄막을 회피하는 VR 멀티플레이 닷지 액션
+</p>
+
+<br>
+
+<!-- 유튜브/링크 버튼 영역 -->
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID">
+    <img src="https://img.shields.io/badge/Portfolio%20Video-YouTube-red?logo=youtube&logoColor=white" />
+  </a>
+  <a href="YOUR_PPT_LINK">
+    <img src="https://img.shields.io/badge/PPT-Download-blue" />
+  </a>
+  <a href="YOUR_REPO_LINK">
+    <img src="https://img.shields.io/badge/Repo-GitHub-black?logo=github&logoColor=white" />
+  </a>
+</p>
+
+<br><br>
+
+<!-- 스크린샷 3장(너가 이미지 넣고 경로만 바꾸면 됨) -->
+<p align="center">
+  <img src="assets/readme/screenshot_01.png" alt="screenshot1" width="30%" />
+  <img src="assets/readme/screenshot_02.png" alt="screenshot2" width="30%" />
+  <img src="assets/readme/screenshot_03.png" alt="screenshot3" width="30%" />
+</p>
+
+<br>
+
+<!-- 핵심 포인트 2~3줄(원하면 수정) -->
+- ⭐ 원작(탑뷰/솔로)을 **1인칭 VR 멀티플레이**로 리메이크
+- ⭐ Firebase(Auth/Realtime DB) + Photon PUN2 기반 **계정/데이터/매칭/룸 시스템** 구현
+- ⭐ Stage/Skin은 ScriptableObject 로컬 참조로 구성해 **서버 요청 최소화(VR 최적화)**
 
 <br><br>
 
@@ -11,9 +49,20 @@ Photon PUN2로 **매칭/룸 시스템**을 구현했습니다.
 <br><br>
 
 ## 🎬 Links
-- 📺 포트폴리오 영상: [추가 예정]
-- 📄 PPT: [추가 예정]
-- 🔗 Repository: [추가 예정]
+- 📺 포트폴리오 영상: https://www.youtube.com/watch?v=YOUR_VIDEO_ID
+- 📄 PPT: YOUR_PPT_LINK
+- 🔗 Repository: YOUR_REPO_LINK
+
+<br><br>
+
+<!-- ===== END HEADER ===== -->
+---
+
+# Unimo: Beyond (VR Multiplayer)
+
+Unity 기반 VR 멀티플레이 프로젝트입니다.  
+Firebase(Authentication / Realtime Database)로 **계정·유저데이터·세션 제어**를 구성했고,  
+Photon PUN2로 **매칭/룸 시스템**을 구현했습니다.
 
 <br><br>
 
