@@ -1,6 +1,6 @@
 # Unimo: Beyond (VR Multiplayer)
 
-Unity 기반 VR 멀티플레이 프로젝트입니다.  
+Unity 3D 기반 VR 멀티플레이 프로젝트입니다.  
 Firebase(Authentication/Realtime Database)로 계정·유저데이터·세션 제어를 구성했고, Photon PUN2로 매칭/룸 시스템을 구현했습니다.
 
 ## Project Info
@@ -11,7 +11,7 @@ Firebase(Authentication/Realtime Database)로 계정·유저데이터·세션 �
 - 네트워크: Photon PUN2
 - 백엔드: Firebase Authentication, Realtime Database
 
-## My Role (Team Lead / Client)
+## My Role (Development Team Lead / Client)
 - Firebase 기반 계정/데이터 파이프라인 + PUN2 매칭 시스템 + Stage/Skin 데이터 로컬 최적화 구조 구현
 
 ## What I Built
