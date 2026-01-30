@@ -1,10 +1,4 @@
 <!-- ===== HEADER ===== -->
-
-<p align="center">
-  <!-- 로고(원하면 교체) -->
-  <img src="assets/readme/youtube_logo.png" alt="logo" width="90" />
-</p>
-
 <h1 align="center">Unimo: Beyond</h1>
 
 <p align="center">
@@ -15,10 +9,10 @@
 
 <!-- 유튜브/링크 버튼 영역 -->
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID">
+  <a href="https://youtu.be/hGNuNgRSJIE?si=uhEJ9xLJ0jFJO407">
     <img src="https://img.shields.io/badge/Portfolio%20Video-YouTube-red?logo=youtube&logoColor=white" />
   </a>
-  <a href="YOUR_PPT_LINK">
+  <a href="https://drive.google.com/file/d/1kRubaIICLOgiDBT0KfKmVI13rv3sLodv/view?usp=sharing">
     <img src="https://img.shields.io/badge/PPT-Download-blue" />
   </a>
   <a href="YOUR_REPO_LINK">
@@ -28,11 +22,13 @@
 
 <br><br>
 
-<!-- 스크린샷 3장(너가 이미지 넣고 경로만 바꾸면 됨) -->
 <p align="center">
-  <img src="assets/readme/screenshot_01.png" alt="screenshot1" width="30%" />
-  <img src="assets/readme/screenshot_02.png" alt="screenshot2" width="30%" />
-  <img src="assets/readme/screenshot_03.png" alt="screenshot3" width="30%" />
+  <img src="https://github.com/user-attachments/assets/bd4ef0a8-c01a-4782-b3ec-e89326a6b7e9"
+       style="width:32%; height:180px; object-fit:cover; object-position:center;" />
+  <img src="https://github.com/user-attachments/assets/75ddb09a-12ed-4d9a-9842-9760ca010bcf"
+       style="width:32%; height:180px; object-fit:cover; object-position:center;" />
+  <img src="https://github.com/user-attachments/assets/46421676-bc01-41e8-9299-32ed98b45a53"
+       style="width:32%; height:180px; object-fit:cover; object-position:center;" />
 </p>
 
 <br>
@@ -49,13 +45,14 @@
 <br><br>
 
 ## 🎬 Links
-- 📺 포트폴리오 영상: https://www.youtube.com/watch?v=YOUR_VIDEO_ID
-- 📄 PPT: YOUR_PPT_LINK
+- 📺 포트폴리오 영상: https://youtu.be/hGNuNgRSJIE?si=uhEJ9xLJ0jFJO407
+- 📄 PPT: https://drive.google.com/file/d/1kRubaIICLOgiDBT0KfKmVI13rv3sLodv/view?usp=sharing
 - 🔗 Repository: YOUR_REPO_LINK
 
 <br><br>
 
 <!-- ===== END HEADER ===== -->
+
 ---
 
 # Unimo: Beyond (VR Multiplayer)
