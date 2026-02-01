@@ -182,8 +182,8 @@ Unimo: Beyond는 **우주선을 조종해 광물을 채굴하며 적 탄막을 �
 - GitHub: [https://github.com/RedRaccoon177]
 - Tistory: [https://wearelast99.tistory.com/]
 - YouTube: [https://www.youtube.com/@%EC%9D%B4%EC%9C%A0-z9c]
-- Canva 포트폴리오: [https://www.canva.com/design/DAGusJR6Rj8/oqtCCGhOprGTfJjlf6Ingw/edit?ui=eyJEIjp7IlAiOnsiQiI6ZmFsc2V9fX0]
-- Canva 이력서: [https://www.canva.com/design/DAGj7YKBoc8/J9uKTSg8uR5alUOQP3tQqQ/edit]
+- Canva 포트폴리오: [https://www.canva.com/design/DAGusJR6Rj8/BOtICI6F1raShPyHHewjxg/view?utm_content=DAGusJR6Rj8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h691958bd9a]
+- Canva 이력서: [https://www.canva.com/design/DAGj7YKBoc8/YPk_CLe8B1taKTE-nneUJA/view?utm_content=DAGj7YKBoc8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha914d97458]
 
 <br>
 
