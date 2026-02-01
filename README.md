@@ -50,6 +50,8 @@
   - [VR 최적화 (서버 최소 요청 + 로컬 참조)](#vr-opt)
   - [스테이지 인게임 (CSV/BPM 탄막 패턴)](#stage)
 - [기술 스택](#tech-stack)
+- [개발자 소개](#developer)
+
 
 <br>
 
@@ -168,3 +170,20 @@ Unimo: Beyond는 **우주선을 조종해 광물을 채굴하며 적 탄막을 �
 - C#
 
 <br>
+
+---
+
+<br>
+
+<a name="developer"></a>
+## 👨‍💻 개발자 소개
+
+- 이름: [이원형]
+- GitHub: [https://github.com/RedRaccoon177]
+- Tistory: [https://wearelast99.tistory.com/]
+- YouTube: [https://www.youtube.com/@%EC%9D%B4%EC%9C%A0-z9c]
+- Canva 포트폴리오: [https://www.canva.com/design/DAGusJR6Rj8/oqtCCGhOprGTfJjlf6Ingw/edit?ui=eyJEIjp7IlAiOnsiQiI6ZmFsc2V9fX0]
+- Canva 이력서: [https://www.canva.com/design/DAGj7YKBoc8/J9uKTSg8uR5alUOQP3tQqQ/edit]
+
+<br>
+
