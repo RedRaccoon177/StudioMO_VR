@@ -178,7 +178,6 @@ Unimo: Beyond는 **우주선을 조종해 광물을 채굴하며 적 탄막을 �
 <a name="developer"></a>
 ## 👨‍💻 개발자 소개
 
-- 이름: [이원형]
 - GitHub: [https://github.com/RedRaccoon177]
 - Tistory: [https://wearelast99.tistory.com/]
 - YouTube: [유튜브 채널](https://www.youtube.com/@%EC%9D%B4%EC%9C%A0-z9c)
