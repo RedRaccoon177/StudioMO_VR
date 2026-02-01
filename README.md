@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/Portfolio%20Video-YouTube-red?logo=youtube&logoColor=white" />
   </a>
   <a href="https://drive.google.com/file/d/1kRubaIICLOgiDBT0KfKmVI13rv3sLodv/view?usp=sharing">
-    <img src="https://img.shields.io/badge/PPT-Download-blue" />
+    <img src="https://img.shields.io/badge/PPT-GoogleDrive-blue" />
   </a>
 </p>
 
