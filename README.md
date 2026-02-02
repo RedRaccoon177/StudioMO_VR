@@ -30,7 +30,8 @@
 <br>
 
 <!-- 핵심 포인트 2~3줄(원하면 수정) -->
-- ⭐ **1인칭 VR 멀티플레이** 게임이자 **1인칭 VR 솔로플레이**도 가능한 게임
+<!-- 핵심 포인트 2~3줄(원하면 수정) -->
+- ⭐ **1인칭 VR 솔로플레이**를 중심으로, **멀티 플레이 모드**도 지원
 - ⭐ Firebase(Auth/Realtime DB) + Photon PUN2 기반 **계정/데이터/매칭/룸 시스템** 구현
 - ⭐ Stage/Skin은 ScriptableObject 로컬 참조로 구성해 **서버 요청 최소화(VR 최적화)**
 
@@ -77,7 +78,7 @@ Unimo: Beyond는 **우주선을 조종해 광물을 채굴하며 적 탄막을 �
 - 플랫폼: PC VR / Quest VR
 - 엔진/버전: Unity 2022.3.21f1
 - 네트워크: Photon PUN2
-- 백엔드: Firebase Authentication, Realtime Database
+- 서버: Firebase(Authentication / Realtime Database)
 
 <br>
 
