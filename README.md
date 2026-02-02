@@ -6,13 +6,18 @@
 
 <br>
 
+https://www.canva.com/design/DAGusJR6Rj8/oqtCCGhOprGTfJjlf6Ingw/edit?ui=eyJEIjp7IlQiOnsiQSI6IlBCNUJDWWZsOE1zNkYyMFgifX19
+
 <!-- 유튜브/링크 버튼 영역 -->
 <p align="center">
   <a href="https://youtu.be/hGNuNgRSJIE?si=uhEJ9xLJ0jFJO407">
     <img src="https://img.shields.io/badge/Portfolio%20Video-YouTube-red?logo=youtube&logoColor=white" />
   </a>
-  <a href="https://drive.google.com/file/d/1kRubaIICLOgiDBT0KfKmVI13rv3sLodv/view?usp=sharing">
-    <img src="https://img.shields.io/badge/PPT-GoogleDrive-blue" />
+  <a href="https://www.canva.com/design/DAGusJR6Rj8/oqtCCGhOprGTfJjlf6Ingw/edit?ui=eyJEIjp7IlQiOnsiQSI6IlBCNUJDWWZsOE1zNkYyMFgifX19">
+    <img src="https://img.shields.io/badge/Portfolio Canva-핵심 기술 Canva-blue" />
+  </a>
+    <a href="https://drive.google.com/file/d/1kRubaIICLOgiDBT0KfKmVI13rv3sLodv/view?usp=sharing">
+    <img src="https://img.shields.io/badge/최종 발표 PPT-GoogleDrive-green" />
   </a>
 </p>
 
