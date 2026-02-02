@@ -30,7 +30,6 @@
 <br>
 
 <!-- 핵심 포인트 2~3줄(원하면 수정) -->
-<!-- 핵심 포인트 2~3줄(원하면 수정) -->
 - ⭐ **1인칭 VR 솔로플레이**를 중심으로, **멀티 플레이 모드**도 지원
 - ⭐ Firebase(Auth/Realtime DB) + Photon PUN2 기반 **계정/데이터/매칭/룸 시스템** 구현
 - ⭐ Stage/Skin은 ScriptableObject 로컬 참조로 구성해 **서버 요청 최소화(VR 최적화)**
@@ -50,6 +49,7 @@
   - [Photon PUN2 (매칭 / 룸)](#photon)
   - [VR 최적화 (서버 최소 요청 + 로컬 참조)](#vr-opt)
   - [스테이지 인게임 (CSV/BPM 탄막 패턴)](#stage)
+  - [핵심 스크립트](#core-scripts)
 - [기술 스택](#tech-stack)
 - [개발자 소개](#developer)
 
@@ -154,6 +154,38 @@ Unimo: Beyond는 **우주선을 조종해 광물을 채굴하며 적 탄막을 �
   - 기본 탄막: 베이스라인(방향/각도 분산)
   - 유도 탄막: 스폰 시점 플레이어 위치를 샘플링해 해당 방향으로 발사
   - 프리셋 패턴 탄막: 각도/범위 프리셋으로 패턴화된 탄막 연출
+
+<br>
+
+<a name="core-scripts"></a>
+### 5) 📌 핵심 스크립트
+
+- Firebase (인증/유저데이터)
+  - `Authentication.cs` : 회원가입/로그인/계정찾기 UI 및 인증 플로우 처리
+  - `FirebaseManager.cs` : Realtime DB 연결/읽기/쓰기 공통 파이프라인 및 초기화
+  - `UserGameData.cs` : UID 기반 유저 데이터 구조/초기 데이터 생성 및 로드/세이브
+
+- Firebase (세션 제어 / 중복 로그인 방지)
+  - `Authentication.cs` : 세션 토큰 생성 및 로그인 시점 제어(트랜잭션/중복 로그인 차단 로직 포함)
+  - `FirebaseManager.cs` : 세션 정리(OnDisconnect) 및 비정상 종료 대비 흐름
+
+- Photon PUN2 (매칭/룸)
+  - `MatchingSystem.cs` : 랜덤 매칭(JoinRandomRoom) -> 실패 시 방 생성(OnJoinRandomFailed), 취소/이탈 상태 정리
+  - (프로젝트에 존재한다면) `LobbyManager.cs` : 로비 UI, Ready 상태, 룸 입장/퇴장 콜백 처리
+
+- 스테이지 데이터 (로컬 참조 최적화)
+  - `StageData.cs` : Stage(1~50) 메타데이터 ScriptableObject 정의
+  - `StageInfoDataSet.cs` : 스테이지 정보 데이터셋 관리/참조(목록/연결용)
+  - `StageManager.cs` : 스테이지 진입/선택/로딩 흐름 제어
+
+- 상점/스킨 (로컬 프리뷰 + 확정 저장)
+  - `SkinData.cs` : 스킨 카탈로그 ScriptableObject 정의
+  - `ShopCanvasCtrl.cs` : 상점 UI 흐름(프리뷰/확정/롤백) 및 표시 갱신
+
+- 인게임 탄막 (CSV/BPM 스케줄)
+  - `BulletPatternLoader.cs` : CSV 파싱 및 패턴 데이터 로드
+  - `BulletPatternExecutor.cs` : BPM 타이밍 기반 스케줄 실행(패턴 구동 핵심)
+  - `BulletSpawnerManager.cs` : 탄막 스폰/관리(패턴 실행 결과를 실제 스폰으로 연결)
 
 <br>
 
