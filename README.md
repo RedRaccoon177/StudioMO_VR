@@ -6,8 +6,6 @@
 
 <br>
 
-https://www.canva.com/design/DAGusJR6Rj8/oqtCCGhOprGTfJjlf6Ingw/edit?ui=eyJEIjp7IlQiOnsiQSI6IlBCNUJDWWZsOE1zNkYyMFgifX19
-
 <!-- 유튜브/링크 버튼 영역 -->
 <p align="center">
   <a href="https://youtu.be/hGNuNgRSJIE?si=uhEJ9xLJ0jFJO407">
