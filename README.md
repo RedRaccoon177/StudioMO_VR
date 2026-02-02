@@ -100,18 +100,16 @@ Unimo: Beyond는 **우주선을 조종해 광물을 채굴하며 적 탄막을 �
 ---
 
 <br>
-
 <a name="what-i-built"></a>
 ## ✅ 내가 구현한 핵심
 
-
 <a name="firebase"></a>
 ### 1) Firebase (Auth / Realtime DB)
-- 회원가입/로그인/계정찾기(아이디/비밀번호) **UI 및 로직 구현**
-- 회원가입 성공 시 UID 기준으로 **초기 유저 데이터 생성**
-  - “가입 성공”에서 끝나지 않고, **즉시 플레이 가능한 상태**로 초기화
-- 닉네임 정책: **Trim + 길이 제한(2~8) + 중복 체크**
-- **동시 접속 방지(세션 토큰)**
+- 회원가입/로그인/계정찾기(아이디/비밀번호) UI 및 로직 구현
+- 회원가입 성공 시 UID 기준으로 초기 유저 데이터 생성
+  - “가입 성공”에서 끝나지 않고, 즉시 플레이 가능한 상태로 초기화
+- 닉네임 정책: Trim + 길이 제한(2~8) + 중복 체크
+- 동시 접속 방지(세션 토큰)
   - 로그인 시 토큰 생성
   - Session을 트랜잭션으로 원자적 기록하여 중복 로그인 차단
   - 비정상 종료 대비 OnDisconnect 기반 세션 정리 흐름 구성
@@ -120,27 +118,27 @@ Unimo: Beyond는 **우주선을 조종해 광물을 채굴하며 적 탄막을 �
 
 <a name="photon"></a>
 ### 2) Photon PUN2 (매칭 / 룸)
-- **랜덤 매칭(Quick Match)**
-  - `JoinRandomRoom` -> 실패 시 `OnJoinRandomFailed`에서 즉시 방 생성
-  - 대기 시간을 줄이고 “입장 시도 -> 실패 시 생성 -> 성공 시 동기화”를 한 흐름으로 구성
-  - 입장/퇴장 콜백으로 룸 UI를 실시간 갱신
-  - PlayerCount가 MaxPlayers(4) 충족 시 **자동 시작 트리거**
-- **사설방(친구와 / RoomCode)**
+- 랜덤 매칭(Quick Match)
+  - JoinRandomRoom -> 실패 시 OnJoinRandomFailed에서 즉시 방 생성
+  - “입장 시도 -> 실패 시 생성 -> 성공 시 동기화”를 한 흐름으로 구성
+  - 입장/퇴장 콜백 기반으로 룸 UI를 실시간 갱신
+  - PlayerCount가 MaxPlayers(4) 충족 시 자동 시작 트리거
+- 사설방(친구와 / RoomCode)
   - RoomCode 생성/참가 흐름 구성
-  - `CustomRoomProperties`에 RoomCode 기록
-  - 코드 오류/입장 실패 시 즉시 안내 UI로 사용자 흐름 제어
-- **룸 상태 동기화**
-  - `CustomProperties`로 닉네임/프로필/Ready 상태를 실시간 반영
-  - 마스터 변경(`OnMasterClientSwitched`) 대응
+  - CustomRoomProperties에 RoomCode 기록
+  - 코드 오류/입장 실패 시 안내 UI로 사용자 흐름 제어
+- 룸 상태 동기화
+  - CustomProperties로 닉네임/프로필/Ready 상태를 실시간 반영
+  - 마스터 변경(OnMasterClientSwitched) 대응
   - 매칭 취소/이탈 시 UI/네트워크 상태 정리로 잔여 상태 방지
 
 <br>
 
 <a name="vr-opt"></a>
 ### 3) VR 최적화 (서버 최소 요청 + 로컬 참조)
-- StageData(1~50), SkinData를 **ScriptableObject 카탈로그로 로컬 참조**
+- StageData(1~50), SkinData를 ScriptableObject 카탈로그로 로컬 참조
 - 선택/프리뷰 과정은 서버 요청 없이 즉시 반영 (로컬 처리)
-- **저장(확정) 시점에만 DB 업데이트**하여 불필요한 통신 최소화
+- 저장(확정) 시점에만 DB 업데이트하여 불필요한 통신 최소화
   - VR 환경에서 네트워크 지연/프레임 드랍 리스크를 줄이도록 설계
 
 <br>
@@ -159,33 +157,31 @@ Unimo: Beyond는 **우주선을 조종해 광물을 채굴하며 적 탄막을 �
 
 <a name="core-scripts"></a>
 ### 5) 📌 핵심 스크립트
+- Firebase / 유저 데이터 / 세션
+  - `FirebaseLoginMgr` : 로그인/회원가입/계정찾기 UI 및 인증 흐름 진입점
+  - `FirebaseAuthMgr` : Firebase Auth 래핑(로그인/회원가입/재인증 등)
+  - `FirebaseDataMgr` : Realtime DB 읽기/쓰기, 유저 데이터 로드/세이브 파이프라인
+  - `UserGameData` : UID 기반 유저 데이터 모델(초기값/기본 세팅 포함)
+  - `NicknameValidator` : Trim/길이 제한/중복 체크 정책 처리
+  - `SessionManager` : 세션 토큰 발급, 트랜잭션 기록, OnDisconnect 정리
 
-- Firebase (인증/유저데이터)
-  - `Authentication.cs` : 회원가입/로그인/계정찾기 UI 및 인증 플로우 처리
-  - `FirebaseManager.cs` : Realtime DB 연결/읽기/쓰기 공통 파이프라인 및 초기화
-  - `UserGameData.cs` : UID 기반 유저 데이터 구조/초기 데이터 생성 및 로드/세이브
+- Photon PUN2 / 매칭 / 룸
+  - `MatchingSystem` : Quick Match(JoinRandomRoom -> 실패 시 생성) 전체 흐름 제어
+  - `RoomCodeManager` : 사설방 코드 생성/참가, CustomRoomProperties로 RoomCode 관리
+  - `RoomStateSync` : CustomProperties 기반 Ready/닉네임/프로필 상태 동기화
+  - `LobbyUIController` : 매칭/룸 입장/퇴장 콜백 기반 UI 갱신 및 버튼 흐름 제어
 
-- Firebase (세션 제어 / 중복 로그인 방지)
-  - `Authentication.cs` : 세션 토큰 생성 및 로그인 시점 제어(트랜잭션/중복 로그인 차단 로직 포함)
-  - `FirebaseManager.cs` : 세션 정리(OnDisconnect) 및 비정상 종료 대비 흐름
+- VR 최적화 / 상점(스테이지/스킨)
+  - `StageData` : Stage ScriptableObject(로컬 카탈로그 데이터)
+  - `SkinData` : Skin ScriptableObject(로컬 카탈로그 데이터)
+  - `ShopManager` : 프리뷰(로컬) / 저장(확정 시 DB 업데이트) 분리 구조
 
-- Photon PUN2 (매칭/룸)
-  - `MatchingSystem.cs` : 랜덤 매칭(JoinRandomRoom) -> 실패 시 방 생성(OnJoinRandomFailed), 취소/이탈 상태 정리
-  - (프로젝트에 존재한다면) `LobbyManager.cs` : 로비 UI, Ready 상태, 룸 입장/퇴장 콜백 처리
-
-- 스테이지 데이터 (로컬 참조 최적화)
-  - `StageData.cs` : Stage(1~50) 메타데이터 ScriptableObject 정의
-  - `StageInfoDataSet.cs` : 스테이지 정보 데이터셋 관리/참조(목록/연결용)
-  - `StageManager.cs` : 스테이지 진입/선택/로딩 흐름 제어
-
-- 상점/스킨 (로컬 프리뷰 + 확정 저장)
-  - `SkinData.cs` : 스킨 카탈로그 ScriptableObject 정의
-  - `ShopCanvasCtrl.cs` : 상점 UI 흐름(프리뷰/확정/롤백) 및 표시 갱신
-
-- 인게임 탄막 (CSV/BPM 스케줄)
-  - `BulletPatternLoader.cs` : CSV 파싱 및 패턴 데이터 로드
-  - `BulletPatternExecutor.cs` : BPM 타이밍 기반 스케줄 실행(패턴 구동 핵심)
-  - `BulletSpawnerManager.cs` : 탄막 스폰/관리(패턴 실행 결과를 실제 스폰으로 연결)
+- 스테이지 / CSV / BPM 탄막
+  - `BulletPatternLoader` : CSV 파싱 -> 스폰/타이밍 데이터로 변환
+  - `BulletPatternExecutor` : BPM 타임라인 기반 실행(스케줄 트리거)
+  - `NormalBullet` : 기본 탄막 발사(각도 분산/베이스라인)
+  - `GuidedBullet` : 유도 탄막(스폰 시점 플레이어 방향 샘플링)
+  - `PatternBullet` : 프리셋 패턴 탄막(각도/범위 프리셋 실행)
 
 <br>
 
