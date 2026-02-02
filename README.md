@@ -195,12 +195,12 @@ Unimo: Beyond는 **우주선을 조종해 광물을 채굴하며 적 탄막을 �
 
 <a name="tech-stack"></a>
 ## 🧩 기술 스택
-- Unity 2022.3.21f1
-- Photon PUN2
-- Firebase Authentication / Realtime Database
+- 엔진: Unity 3D (2022.3.21f1)
+- 언어: C#
+- 네트워크: Photon PUN2
+- 서버: Firebase (Firebase Authentication / Realtime Database)
 - XR Interaction Toolkit
 - URP
-- C#
 
 <br>
 
